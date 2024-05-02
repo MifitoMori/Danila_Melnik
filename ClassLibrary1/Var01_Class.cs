@@ -61,9 +61,8 @@ namespace ClassLibrary1
         }
         public double Div(double n1, double n2)
         {
-        // Проверка деления на "0"
         if (n2 == 0.0D)
-            throw new DivideByZeroException();
+        throw new DivideByZeroException();
         return n1 / n2;
         }
         public double AddWithInc(double n1, double n2)
