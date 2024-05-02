@@ -13,7 +13,6 @@ namespace ClassLibrary1
         private DateTime breakStartTime;
         private DateTime breakEndTime;
         private string shiftLink;
-
         public Var07_Couple(DateTime startTime, DateTime endTime, DateTime breakStartTime, DateTime breakEndTime, string shiftLink)
         {
             this.startTime = startTime;
@@ -22,11 +21,9 @@ namespace ClassLibrary1
             this.breakEndTime = breakEndTime;
             this.shiftLink = shiftLink;
         }
-
         public Var07_Couple(TimeSpan startTime, TimeSpan endTime, TimeSpan breakStartTime, TimeSpan breakEndTime, string shiftLink)
         {
             DateTime currentDate = DateTime.Today;
-
             this.startTime = currentDate.Add(startTime);
             this.endTime = currentDate.Add(endTime);
             this.breakStartTime = currentDate.Add(breakStartTime);
