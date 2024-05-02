@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace ClassLibrary1
 {
     public class Var01_Class
@@ -12,14 +11,12 @@ namespace ClassLibrary1
         {
             throw new NotImplementedException();
         }
-
         private DateTime dateTime;
         private Var09_Employees employees;
         private Var02_TheAudience theAudience;
         private Var04_Group group;
         private Var07_Couple couple;
         private Var14_Classes classes;
-
         public string datetime
         {
             get { return dateTime.ToString(); }
@@ -50,7 +47,6 @@ namespace ClassLibrary1
             get { return classes.ToString(); }
             set { classes = Var14_Classes.ToString(value); }
         }
-
         public Var01_Class(string dateTime, string discipline, string employees, string theAudience, string group, string couple, string classes)
         {
             datetime = dateTime;
@@ -60,12 +56,9 @@ namespace ClassLibrary1
             Couple = couple;
             Classes = classes;
         }
-
         public Var01_Class()
         {
-
         }
-
         public double Div(double n1, double n2)
         {
             // Проверка деления на "0"
@@ -73,12 +66,9 @@ namespace ClassLibrary1
                 throw new DivideByZeroException();
             return n1 / n2;
         }
-
         public double AddWithInc(double n1, double n2)
         {
             return n1 + n2 + 1;
         }
-
-
     }
 }
